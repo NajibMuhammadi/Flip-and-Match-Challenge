@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kodexempel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="jumbotron text-center">
+            <h1 id="msg">Fågel-Memory</h1>
+            <p id="errorMsg">Fyll i nicknames samt färg och börja spela!</p>
+        </div>
+
+        <form id="form">
+            <div id="divInForm" class="mt-5 row">
+                <div class="col-6">
+                    <label for="nick_1">Nickname spelare 1:</label>
+                    <input type="text" id="nick_1" placeholder="nickname" class="form-control"
+                        title="nickname för spelare 1">
+                </div>
+                <div class="col-6">
+                    <label for="nick_2">Nickname spelare 2:</label>
+                    <input type="text" id="nick_2" placeholder="nickname" class="form-control"
+                        title="nickname för spelare 2">
+                </div>
+                <div class="col-6">
+                    <label for="color_1">Färg spelare 1:</label>
+                    <input type="color" id="color_1" value="#FFFFFF" placeholder="nickname" class="form-control"
+                        title="färg för spelare 1">
+                </div>
+                <div class="col-6">
+                    <label for="color_2">Färg spelare 2:</label>
+                    <input type="color" id="color_2" value="#FFFFFF" placeholder="nickname" class="form-control"
+                        title="färg för spelare 2">
+                </div>
+                <div id="divWithA" class="col-12 text-right mt-5">
+                    <a href="#" id="newGame" class="btn btn-primary btn-xl">Starta spelet!</a>
+                </div>
+            </div>
+        </form>
+
+        <div id="gameArea" class="game-area"></div>
+
+    </main>
+
+    <script src="./oGameData.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
